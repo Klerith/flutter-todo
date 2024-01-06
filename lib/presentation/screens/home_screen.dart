@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20 ),
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5 ),
           child: Column(
             children: [
           
