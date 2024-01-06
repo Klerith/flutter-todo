@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/presentation/widgets/todo/todo_item.dart';
 
 class TodoListView extends StatelessWidget {
   const TodoListView({super.key});
@@ -10,9 +11,8 @@ class TodoListView extends StatelessWidget {
         // separatorBuilder: (context, index) => const Divider(),
 
         itemCount: 10,
-        itemBuilder: (BuildContext context, int index) {
-          return SwitchListTile(
-              value: true, onChanged: (value) {}, title: Text('Tarea $index'));
+        itemBuilder: (BuildContext context, int index){
+          return const TodoItem();
         },
       ),
     );
